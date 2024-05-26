@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="logo">Facebook</h1>
+    <form id="login-form">
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Log In</button>
+      <p class="error-msg" id="login-error-msg"></p>
+    </form>
+    <div class="separator">
+      <span class="or">or</span>
+    </div>
+    <button class="btn-fb"id="login-fb-btn">Log in with Facebook</button>
+    <div class="signup-link">
+      <a href="#" id="signup-link">Create New Account</a>
+    </div>
+  </div>
+
+  <div class="signup-container" style="display: none;">
+    <h1 class="logo">Create a New Account</h1>
+    <form id="signup-form">
+      <div class="form-group">
+        <input type="text" id="new-name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="new-email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="new-password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" >Sign Up</button>
+      <p class="error-msg" id="signup-error-msg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
